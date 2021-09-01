@@ -1,0 +1,29 @@
+body {
+	background-image: url(background.JPG);
+	background-size: cover;
+	font-family: sans-serif, BlinkMackSystemFont, -apple-system, 'Segoe UI', 'Open Sans' ;
+	font-weight: bold;
+	text-align: center;   
+}
+
+h1 {
+	margin: 100px 0px 50px 0px;
+
+}
+
+h2 {font-size: 50px;
+	margin-top: 0px ;
+	margin-bottom: 40px;
+}
+
+button {
+	border: none;
+	padding:10px 40px ;
+	margin: 10px;
+	border-radius: 15%;
+	background-color: darkred;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: sans-serif;
+}

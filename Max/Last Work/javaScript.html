@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Javascript</title>
+
+</head>
+<body>
+
+	<p id="textt">Hello World</p>
+	<!-- <button onclick="alert('hi ehsan')">Click me</button> -->
+	<button id="mybutton">Change text</button>
+	<script type="text/javascript">
+			alert('page is loaded:')
+			// One line comments
+			/*
+				multi line 
+				comments
+			*/
+			document.getElementById("textt").innerHTML = "Hello pakistan";
+
+			document.getElementById("mybutton").onclick = function(){
+				document.getElementById("textt").innerHTML = "i am clicked pakistan"
+			}
+
+	</script> 
+</body>
+</html>

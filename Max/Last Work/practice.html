@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang= "en-US">
+	<head>
+		<title>Practice Work</title>
+		<style type="text/css">
+			h1{
+				font-size: 30px;
+				color: lightgoldenrodyellow;
+				background-color: #aaa;
+				display: inline;			
+			}
+
+			a{
+				background-color: lightcyan;
+			}
+			div h1{
+				color: darkred;
+				text-align: center;
+				text-decoration: none;
+
+			}
+			div p{
+				color: blueviolet;
+				background-color: lightgray;
+				/*All inside the div paragraph shows these propeties*/
+			}
+			div{
+				background-color: darkred;
+			}
+			div ~ p{
+				/*<!-- After the div all paragraph will done as the following properties-->*/
+			}
+			div > p{
+				/*After the Div first paragraph done this properties*/
+			}
+			#one{
+				font-size: 30px;
+				color: orange;
+			}
+			.orange{
+				color: orange;
+				font-size: 25px;
+			}
+
+			div#me p{
+				color: darkred;
+				background-color: lightcyan;
+				font-size: 30px;
+
+			} 
+			div#me > p{
+				color: blue;
+				size: 20px ;
+				background-color: brown;
+				text-align: center;
+				border: 10% groove $aaa;
+				border-radius: 50%;
+				border-color: orange;
+				height: 400px;
+				width: 400px;
+				display: inline;
+				margin-left: 250px;
+				outline: 5px dotted black;
+			}
+			a:focus{
+				outline: 0;
+			}
+		</style>
+	</head>
+	<body style="background-color: #33495e; color: white;">
+		<h1>Pakistan</h1>
+		<p>My Name is Ehsan<br>I am from Swabi</p>
+		<br>
+<pre class="orange">
+You are free to write any thing and look the 
+places is fill 
+	<b>This space</b> <em>is belong from</em> <strong>the tagspace before</strong> <big>this line  
+	like</big> <small>same  and on the space       pakistan</small>          is      <i>the good 
+Countery.</i>
+</pre>
+		<hr>
+		<p>
+			I am Cool
+		</p>
+		<pre>
+		<code>
+			var x = 10;
+			var y = 20;
+			x + y = 30;
+			
+		</code></pre>
+		<p><kbd>file | New</kbd></p>
+		<pre><kbd> file | Open</kbd></pre>		
+		<kbd> file | <mark style="background-color:green;">WithOut Any</mark> tag kbd</kbd>
+
+		<samp> npm install some package</samp> <br>
+		<code>(<var>x</var>+<var>y</var>)</code><sup>2</sup> <sub>4</sub><br>
+		<a href="http://www.google.com">Click Me to Open Google</a>
+
+		<p style="font-size: 30px;"><strong>(log<sub>10</sub>1000)<sup>2</sup></strong></p>
+
+		<p><i>I Like <del>Red</del> Green</i></p>
+		<p><i>I Like <ins>Red</ins></i></p>
+		<hr>
+		<p id="one">My Name is "Ehsan"</p>
+		<br>
+		<p id="two">My Name is <q>Ehsan</q></p>
+		<br>
+		<blockquote class="orange" style="border: 5px solid lightblue;border-right: none; border-left: none;"> 
+			<p style="padding-left: 40%;">My Name is Ehsan</p>
+
+		</blockquote>
+		<abbr title="Ehsan From Swabi" style="margin-left: 50%;">EFS</abbr>
+		<br>
+		<address>
+			WWB, 50 Family Quarter Q No. 40<br>IDS Gadoon Amazai<br>
+			Swabi
+		</address>
+		<bdo dir="rtl">Ehsan</bdo>
+		<bdo dir="ltr">Ehsan</bdo>
+
+		<h2>Colors</h2>
+		<br>
+		<p style="color: #f63a5e; font-size: ;">I love pakistan</p>
+
+		<h2>inLine and Block level</h2>
+
+		<p>p tag is a block leavel elements, p, div,from, h1 to h6 all</p>
+		<p>spam,strong, b, img, span,a, etc etc are in line elements</p>
+
+		<h2>ID's And Classes</h2>
+
+		<p id="myid"> i cannot use the same id for any other tag</p>
+
+		<p class="myclass">each element have oly one id but it have more then one class or one class can be use for other element in this page</p>
+		
+		<h2>Global URL or Local URL</h2>
+		
+		<a href="https://www.google.com">I am a gloable link of Google by default it is in target = "_self"</a>
+
+		<h4>Local link to connect other page means abc.html in the refrence of the link a</h4>
+
+		<a href="https://www.google.com" target="_blank"> target="_blank" use to open the link in new tab</a>
+		<br>
+		<hr>
+		<h1>Image</h1>
+		<br>
+		<img src="image/ball.jpg" alt="a ball image is there" width="200px" height="200px" style="float:right;">
+		
+		<p style="display: inline;">Simply put, a paragraph is a collection of sentences all related to a central topic, idea, or theme. Paragraphs act as structural tools for writers to organize their thoughts into an ideal progression, and they also help readers process those thoughts effortlessly. Imagine how much harder reading and writing would be if everything was just one long block of text. 
+
+		There’s a lot of flexibility when it comes to writing paragraphs, but if there’s one steadfast rule, it’s this: Paragraphs should relate to one main topic or point. The paragraph itself often contains multiple points spanning several sentences, but they should all revolve around one core theme. Just as sentences build upon each other to communicate the paragraph’s core theme, paragraphs work together to communicate the core theme of the writing as a whole. </p>
+		
+		<div> 
+			<h1>I am inside the div</h1>
+			<p class="orange"><br><br>I am pakistani </p>
+			<br>
+		</div>
+
+		<div id="me">
+			<p>I am pakistan</p>
+			<p>I am ehsan</p>
+			<div>
+				<p>I am third</p>
+				<p>I am fourth</p>
+			</div>
+		</div>
+		<a style="outline: 5px dotted red;" href="#a">Click Me</a>
+			
+	</body>
+</html>

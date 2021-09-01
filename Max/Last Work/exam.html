@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function validateForm() {
+    var name = document.getElementById("name").value,
+    rmonth =  document.getElementById("month").value,
+    email = document.getElementById("email").value,
+    num = document.getElementById("ch").value,
+    chp = document.getElementById("chp").value,
+    tomatch = /^\d{3}-\d{3}-\d{4}$/,
+    emailMatch = /^\[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Z]{2,4}$/,
+    errors = [];
+
+    if (!name){
+      errors.push("The Name is required");
+    }
+    if (!month){
+      errors.push("The month is required.");
+    } else if (!tomatch.test(month)){
+      errors.push("The month must be between 1 and 12");
+    }
+
+    if (!email){
+      errors.push("The email is required.");
+    } else if (!emailMatch.test(email)){
+      errors.push("The email must be formated as follows: abc@domain.com.");
+    }
+
+    if (!num){
+      errors.push("The Cradit Hours is required.");
+    } else if (!tomatch.test(number,9,18)){
+      errors.push("The the number must be between 9 and 18");
+    }
+
+	if (!chp){
+      errors.push("The Cradit Hours price is required.");
+    } else if (!tomatch.test(number,1000,1500)){
+      errors.push("The the number must be between 9 and 18");
+    }
+    
+}
+function onsubmit() {
+	var Cradith = document.getElementById("ch").value;
+	var chp = document.getElementById("chp").value;
+ 	var x = chp * Cradit;
+ 	document.getElementById("cost").innerHTML = result;
+}
+
+function resetform() {
+	document.getElementById("myForm").reset();
+}
+</script>
+
+</head>
+<body>
+
+<form id="myForm" name="myForm" onsubmit="return validateForm()" method="post">
+  <h1>Student Registration Cost</h1>
+  <br>
+  Student Name:  <input  id="name" type="text" value="last name, first name">
+  <br>
+  <br>
+  Registration Month: <input id="month" type="text" value="Month beween 1 and 12">
+  <br><br>
+  Student Email: <input id="email" type="text" value="Email contain @">
+  <br><br>
+  credit hours: <input id="ch" type="text" value="Cradit hours betwen 1 and 18">
+  <br><br>
+  Cradit hour Price:<input id="chp" type="text" value="Cradit hours betwen1000 and 15000">
+  <br><br>
+  <hr>
+  <input type="submit" onclick="onsubmit()" value="Total Cost">
+  <input type="submit" onclick="resetform()" value="Clear Order form">
+  <hr>
+  Cost: <input id="cost" type="text" name=" ">
+  <hr>
+</form>
+</body>
+</html>
